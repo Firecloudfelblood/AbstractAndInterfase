@@ -1,5 +1,7 @@
 package Abstract;
 
+import Interfase.InterfaseDuck;
+
 public abstract class AbstractDuck {
     public abstract void swim();
 
@@ -7,7 +9,5 @@ public abstract class AbstractDuck {
         System.out.println("Display duck");
     }
 
-    public void quack(){
-        System.out.println("Quack");
-    }
+    public abstract void quack();
 }

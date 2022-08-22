@@ -1,14 +1,22 @@
-import Classes.BrownDuckInterfase;
-import Classes.DuckStatue;
-import Classes.Mallard;
+import Classes.*;
 
 public class Main {
     public static void main(String[] args) {
+        CanadianDuck cDuck = new CanadianDuck();
+        RubberDuck rubberDuck = new RubberDuck();
         BrownDuckInterfase bDuck = new BrownDuckInterfase();
         DuckStatue sDuck = new DuckStatue();
         Mallard mallard = new Mallard();
 
-        System.out.println("********** Brown duck interface **********");
+        System.out.println("********** Canadian Duck **********");
+        cDuck.quack();
+        cDuck.swim();
+
+        System.out.println("\n********** Rubber Duck **********");
+        rubberDuck.quack();
+        rubberDuck.swim();
+
+        System.out.println("\n********** Brown duck interface **********");
         bDuck.speack("quack");
         bDuck.fly();
         System.out.println( bDuck.swim("can"));

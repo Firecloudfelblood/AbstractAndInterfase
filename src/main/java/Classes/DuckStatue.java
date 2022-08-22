@@ -8,4 +8,9 @@ public class DuckStatue extends AbstractDuck {
     public void swim() {
         System.out.println("Cant swim");
     }
+
+    @Override
+    public void quack() {
+        System.out.println("Can't quack");
+    }
 }
